@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Navbar } from "@/components/marketing/navbar";
 import { Footer } from "@/components/marketing/footer";
@@ -8,9 +8,9 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { CreditCard, CheckCircle2, ShieldCheck, Zap, ArrowRight, Building2 } from "lucide-react";
+import { CreditCard, CheckCircle2, ShieldCheck, Zap, ArrowRight } from "lucide-react";
 
-export default function DedicatedCheckoutPage() {
+function CheckoutContent() {
   const searchParams = useSearchParams();
   const planParam = searchParams ? searchParams.get("plan") || "professional" : "professional";
   const cycleParam = searchParams ? (searchParams.get("cycle") as "monthly" | "yearly") || "monthly" : "monthly";
@@ -167,5 +167,13 @@ export default function DedicatedCheckoutPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function DedicatedCheckoutPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background flex items-center justify-center text-foreground text-sm">Loading Checkout...</div>}>
+      <CheckoutContent />
+    </Suspense>
   );
 }

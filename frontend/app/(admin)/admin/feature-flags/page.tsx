@@ -50,7 +50,7 @@ export default function FeatureFlagsPage() {
               </Badge>
               <Button
                 size="sm"
-                variant={f.is_enabled ? "outline" : "default"}
+                variant={f.is_enabled ? "outline" : "primary"}
                 onClick={() => toggleFlag(f.key)}
                 className="text-xs font-bold"
               >

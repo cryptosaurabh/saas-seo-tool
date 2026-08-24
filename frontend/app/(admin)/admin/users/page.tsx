@@ -18,7 +18,7 @@ import {
   Plus
 } from "lucide-react";
 
-export function UserManagementPage() {
+export default function UserManagementPage() {
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState("all");
 
@@ -143,5 +143,3 @@ export function UserManagementPage() {
     </div>
   );
 }
-
-export default UserManagementPage;

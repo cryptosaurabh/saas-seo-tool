@@ -35,6 +35,7 @@ export interface TrackedKeywordRow {
 export function RankingsTable({ keywords = [] }: { keywords?: TrackedKeywordRow[] }) {
   const [query, setQuery] = useState("");
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [newKeyword, setNewKeyword] = useState("");
   const [targetUrl, setTargetUrl] = useState("");
 
   const [items, setItems] = useState<TrackedKeywordRow[]>(
