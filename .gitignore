@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.production
+.env.staging
+.env.local
+.env.*.local
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.pytest_cache/
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
