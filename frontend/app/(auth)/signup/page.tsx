@@ -32,10 +32,10 @@ export default function SignupPage() {
 
       <div className="w-full max-w-md space-y-6 relative z-10">
         <div className="text-center space-y-2">
-          <div className="inline-flex w-14 h-14 rounded-2xl bg-white/95 p-1.5 items-center justify-center shadow-xl border border-white/20 mb-2">
-            <img src="/logo.png" alt="PEXIS Logo" className="w-full h-full object-contain" />
+          <div className="inline-flex w-12 h-12 rounded-2xl bg-gradient-to-tr from-primary to-purple-600 items-center justify-center text-white font-black text-2xl shadow-xl glow-primary mb-2">
+            S
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-foreground">Create Your PEXIS Account</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-foreground">Create Your SaaS Tenant</h1>
           <p className="text-xs text-muted-foreground">Start your 14-day free enterprise trial</p>
         </div>
 
