@@ -40,11 +40,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary via-indigo-500 to-purple-600 flex items-center justify-center text-white font-black text-xl shadow-lg glow-primary group-hover:scale-105 transition-transform">
-            S
+          <div className="w-10 h-10 rounded-2xl bg-white/95 p-1 flex items-center justify-center shadow-lg border border-white/20 group-hover:scale-105 transition-transform overflow-hidden">
+            <img src="/logo.png" alt="PEXIS Logo" className="w-full h-full object-contain" />
           </div>
           <span className="font-extrabold text-lg tracking-tight text-foreground flex items-center gap-1.5">
-            SEOPilot AI <Sparkles className="w-4 h-4 text-primary animate-pulse" />
+            PEXIS <Sparkles className="w-4 h-4 text-primary animate-pulse" />
           </span>
         </Link>
 

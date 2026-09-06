@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SEOPilot AI - The AI-Powered SEO Operating System",
+  title: "PEXIS - Scale Company Operating System",
   description: "Enterprise SaaS OS for agencies, businesses, freelancers, and enterprises.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

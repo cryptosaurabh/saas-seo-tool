@@ -29,11 +29,11 @@ export function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-2xl bg-gradient-to-tr from-primary to-purple-600 flex items-center justify-center text-white font-black text-lg shadow-lg glow-primary">
-                S
+              <div className="w-9 h-9 rounded-2xl bg-white/95 p-1 flex items-center justify-center shadow-lg border border-white/20 overflow-hidden shrink-0">
+                <img src="/logo.png" alt="PEXIS Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-extrabold text-base tracking-tight text-foreground flex items-center gap-1.5">
-                SEOPilot AI <Sparkles className="w-4 h-4 text-primary" />
+                PEXIS <Sparkles className="w-4 h-4 text-primary" />
               </span>
             </Link>
             <p className="text-xs text-muted-foreground max-w-sm leading-relaxed">
