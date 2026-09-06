@@ -73,14 +73,14 @@ export function Sidebar() {
       <div className="p-4 space-y-6 overflow-y-auto">
         {/* Brand Header */}
         <div className="flex items-center gap-3 px-2">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary to-indigo-500 flex items-center justify-center text-white font-black text-lg shadow-lg glow-primary">
-            S
+          <div className="w-10 h-10 rounded-xl bg-white/95 p-1 flex items-center justify-center shadow-md border border-white/20 overflow-hidden shrink-0">
+            <img src="/logo.png" alt="PEXIS Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="font-bold text-sm text-foreground tracking-tight flex items-center gap-1.5">
-              SEOPilot AI <Sparkles className="w-3.5 h-3.5 text-primary animate-pulse" />
+              PEXIS <Sparkles className="w-3.5 h-3.5 text-primary animate-pulse" />
             </h1>
-            <p className="text-[10px] text-muted-foreground font-medium">Enterprise SaaS OS</p>
+            <p className="text-[10px] text-muted-foreground font-medium">Scale Company OS</p>
           </div>
         </div>
 

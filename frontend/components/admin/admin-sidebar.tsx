@@ -42,12 +42,12 @@ export function AdminSidebar() {
       <div className="space-y-6">
         {/* Brand Header */}
         <div className="flex items-center gap-3 px-2 py-1">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-rose-500 to-indigo-600 flex items-center justify-center text-white shadow-lg glow-primary font-black text-sm">
-            SA
+          <div className="w-9 h-9 rounded-xl bg-white/95 p-1 flex items-center justify-center shadow-lg border border-white/20 overflow-hidden shrink-0">
+            <img src="/logo.png" alt="PEXIS Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="font-extrabold text-sm tracking-tight text-foreground">SEOPilot AI</span>
+              <span className="font-extrabold text-sm tracking-tight text-foreground">PEXIS AI</span>
               <Badge variant="destructive" className="text-[9px] px-1 py-0 font-bold uppercase">ADMIN</Badge>
             </div>
             <p className="text-[10px] text-muted-foreground">Platform Control Console</p>
